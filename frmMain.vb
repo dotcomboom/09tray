@@ -323,9 +323,9 @@ Public Class frmMain
         Dim procs = process.GetProcessesByName(monitoredProcess)
         If procs.Count > 0 Then
             Dim proc As Process = procs(0)
-            MessengerDotNet.MessengerActivity.SetActivity(activity, beamingActivity, proc.MainWindowTitle)
+            MessengerDotNet.MessengerActivity.SetActivity(activity, proc.MainWindowTitle)
         Else
-            MessengerDotNet.MessengerActivity.SetActivity(MessengerDotNet.MessengerActivityType.Music, False, "dis")
+            MessengerDotNet.MessengerActivity.SetActivity(MessengerDotNet.MessengerActivityType.Music, "")
         End If
         Timer1.Enabled = beamingActivity
     End Sub
