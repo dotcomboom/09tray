@@ -35,6 +35,17 @@ Partial Class frmMain
 		Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
 		Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
 		Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+		Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SignOuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SignInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.OpenMessengerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+		Me.itmOnline = New System.Windows.Forms.ToolStripMenuItem()
+		Me.itmAway = New System.Windows.Forms.ToolStripMenuItem()
+		Me.itmBusy = New System.Windows.Forms.ToolStripMenuItem()
+		Me.imInvisible = New System.Windows.Forms.ToolStripMenuItem()
+		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
 		Me.TidyWLMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.QuitMessengerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
 		Me.GToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,19 +63,9 @@ Partial Class frmMain
 		Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.TrayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ClassicToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.Start09trayWithWindowsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
 		Me.AboutTidyWLMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-		Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.SignOuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.SignInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.OpenMessengerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-		Me.itmOnline = New System.Windows.Forms.ToolStripMenuItem()
-		Me.itmAway = New System.Windows.Forms.ToolStripMenuItem()
-		Me.itmBusy = New System.Windows.Forms.ToolStripMenuItem()
-		Me.imInvisible = New System.Windows.Forms.ToolStripMenuItem()
-		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
 		Me.ContextMenuStrip1.SuspendLayout()
 		Me.SuspendLayout()
 		'
@@ -159,124 +160,6 @@ Partial Class frmMain
 		Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
 		Me.ContextMenuStrip1.Size = New System.Drawing.Size(181, 236)
 		'
-		'TidyWLMToolStripMenuItem
-		'
-		Me.TidyWLMToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuitMessengerToolStripMenuItem1, Me.GToolStripMenuItem, Me.ToolStripSeparator3, Me.MaintenanceToolStripMenuItem, Me.SetStatusToolStripMenuItem1, Me.MenuToolStripMenuItem, Me.ToolStripSeparator5, Me.AboutTidyWLMToolStripMenuItem})
-		Me.TidyWLMToolStripMenuItem.Name = "TidyWLMToolStripMenuItem"
-		Me.TidyWLMToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.TidyWLMToolStripMenuItem.Text = "09tray"
-		'
-		'QuitMessengerToolStripMenuItem1
-		'
-		Me.QuitMessengerToolStripMenuItem1.Name = "QuitMessengerToolStripMenuItem1"
-		Me.QuitMessengerToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-		Me.QuitMessengerToolStripMenuItem1.Text = "Stop Messenger"
-		'
-		'GToolStripMenuItem
-		'
-		Me.GToolStripMenuItem.Name = "GToolStripMenuItem"
-		Me.GToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.GToolStripMenuItem.Text = "Quit 09tray"
-		'
-		'ToolStripSeparator3
-		'
-		Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-		Me.ToolStripSeparator3.Size = New System.Drawing.Size(177, 6)
-		'
-		'MaintenanceToolStripMenuItem
-		'
-		Me.MaintenanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReceivedFilesToolStripMenuItem, Me.DdToolStripMenuItem, Me.DownloadMessengerToolStripMenuItem, Me.EscargotchatToolStripMenuItem})
-		Me.MaintenanceToolStripMenuItem.Name = "MaintenanceToolStripMenuItem"
-		Me.MaintenanceToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.MaintenanceToolStripMenuItem.Text = "Places..."
-		'
-		'ReceivedFilesToolStripMenuItem
-		'
-		Me.ReceivedFilesToolStripMenuItem.Name = "ReceivedFilesToolStripMenuItem"
-		Me.ReceivedFilesToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
-		Me.ReceivedFilesToolStripMenuItem.Text = "DataStore"
-		'
-		'DdToolStripMenuItem
-		'
-		Me.DdToolStripMenuItem.Name = "DdToolStripMenuItem"
-		Me.DdToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
-		Me.DdToolStripMenuItem.Text = "My Received Files"
-		'
-		'DownloadMessengerToolStripMenuItem
-		'
-		Me.DownloadMessengerToolStripMenuItem.Name = "DownloadMessengerToolStripMenuItem"
-		Me.DownloadMessengerToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
-		Me.DownloadMessengerToolStripMenuItem.Text = "Download Messenger"
-		'
-		'EscargotchatToolStripMenuItem
-		'
-		Me.EscargotchatToolStripMenuItem.Name = "EscargotchatToolStripMenuItem"
-		Me.EscargotchatToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
-		Me.EscargotchatToolStripMenuItem.Text = "Escargot.chat"
-		'
-		'SetStatusToolStripMenuItem1
-		'
-		Me.SetStatusToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator6, Me.MusicToolStripMenuItem, Me.GameToolStripMenuItem, Me.OfficeToolStripMenuItem})
-		Me.SetStatusToolStripMenuItem1.Name = "SetStatusToolStripMenuItem1"
-		Me.SetStatusToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-		Me.SetStatusToolStripMenuItem1.Text = "Activity..."
-		'
-		'ToolStripSeparator6
-		'
-		Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-		Me.ToolStripSeparator6.Size = New System.Drawing.Size(103, 6)
-		'
-		'MusicToolStripMenuItem
-		'
-		Me.MusicToolStripMenuItem.CheckOnClick = True
-		Me.MusicToolStripMenuItem.Name = "MusicToolStripMenuItem"
-		Me.MusicToolStripMenuItem.Size = New System.Drawing.Size(106, 22)
-		Me.MusicToolStripMenuItem.Text = "Music"
-		'
-		'GameToolStripMenuItem
-		'
-		Me.GameToolStripMenuItem.CheckOnClick = True
-		Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
-		Me.GameToolStripMenuItem.Size = New System.Drawing.Size(106, 22)
-		Me.GameToolStripMenuItem.Text = "Game"
-		'
-		'OfficeToolStripMenuItem
-		'
-		Me.OfficeToolStripMenuItem.CheckOnClick = True
-		Me.OfficeToolStripMenuItem.Name = "OfficeToolStripMenuItem"
-		Me.OfficeToolStripMenuItem.Size = New System.Drawing.Size(106, 22)
-		Me.OfficeToolStripMenuItem.Text = "Office"
-		'
-		'MenuToolStripMenuItem
-		'
-		Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TrayToolStripMenuItem, Me.ClassicToolStripMenuItem})
-		Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-		Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.MenuToolStripMenuItem.Text = "Layout..."
-		'
-		'TrayToolStripMenuItem
-		'
-		Me.TrayToolStripMenuItem.Name = "TrayToolStripMenuItem"
-		Me.TrayToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
-		Me.TrayToolStripMenuItem.Text = "Ergonomic"
-		'
-		'ClassicToolStripMenuItem
-		'
-		Me.ClassicToolStripMenuItem.Name = "ClassicToolStripMenuItem"
-		Me.ClassicToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
-		Me.ClassicToolStripMenuItem.Text = "Classic"
-		'
-		'ToolStripSeparator5
-		'
-		Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-		Me.ToolStripSeparator5.Size = New System.Drawing.Size(177, 6)
-		'
-		'AboutTidyWLMToolStripMenuItem
-		'
-		Me.AboutTidyWLMToolStripMenuItem.Name = "AboutTidyWLMToolStripMenuItem"
-		Me.AboutTidyWLMToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.AboutTidyWLMToolStripMenuItem.Text = "About this app"
-		'
 		'ToolStripSeparator1
 		'
 		Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
@@ -345,6 +228,130 @@ Partial Class frmMain
 		Me.Timer1.Enabled = True
 		Me.Timer1.Interval = 2000
 		'
+		'TidyWLMToolStripMenuItem
+		'
+		Me.TidyWLMToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuitMessengerToolStripMenuItem1, Me.GToolStripMenuItem, Me.ToolStripSeparator3, Me.MaintenanceToolStripMenuItem, Me.SetStatusToolStripMenuItem1, Me.MenuToolStripMenuItem, Me.Start09trayWithWindowsToolStripMenuItem, Me.ToolStripSeparator5, Me.AboutTidyWLMToolStripMenuItem})
+		Me.TidyWLMToolStripMenuItem.Name = "TidyWLMToolStripMenuItem"
+		Me.TidyWLMToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+		Me.TidyWLMToolStripMenuItem.Text = "09tray"
+		'
+		'QuitMessengerToolStripMenuItem1
+		'
+		Me.QuitMessengerToolStripMenuItem1.Name = "QuitMessengerToolStripMenuItem1"
+		Me.QuitMessengerToolStripMenuItem1.Size = New System.Drawing.Size(211, 22)
+		Me.QuitMessengerToolStripMenuItem1.Text = "Stop Messenger"
+		'
+		'GToolStripMenuItem
+		'
+		Me.GToolStripMenuItem.Name = "GToolStripMenuItem"
+		Me.GToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+		Me.GToolStripMenuItem.Text = "Quit 09tray"
+		'
+		'ToolStripSeparator3
+		'
+		Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+		Me.ToolStripSeparator3.Size = New System.Drawing.Size(208, 6)
+		'
+		'MaintenanceToolStripMenuItem
+		'
+		Me.MaintenanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReceivedFilesToolStripMenuItem, Me.DdToolStripMenuItem, Me.DownloadMessengerToolStripMenuItem, Me.EscargotchatToolStripMenuItem})
+		Me.MaintenanceToolStripMenuItem.Name = "MaintenanceToolStripMenuItem"
+		Me.MaintenanceToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+		Me.MaintenanceToolStripMenuItem.Text = "Places..."
+		'
+		'ReceivedFilesToolStripMenuItem
+		'
+		Me.ReceivedFilesToolStripMenuItem.Name = "ReceivedFilesToolStripMenuItem"
+		Me.ReceivedFilesToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+		Me.ReceivedFilesToolStripMenuItem.Text = "DataStore"
+		'
+		'DdToolStripMenuItem
+		'
+		Me.DdToolStripMenuItem.Name = "DdToolStripMenuItem"
+		Me.DdToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+		Me.DdToolStripMenuItem.Text = "My Received Files"
+		'
+		'DownloadMessengerToolStripMenuItem
+		'
+		Me.DownloadMessengerToolStripMenuItem.Name = "DownloadMessengerToolStripMenuItem"
+		Me.DownloadMessengerToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+		Me.DownloadMessengerToolStripMenuItem.Text = "Download Messenger"
+		'
+		'EscargotchatToolStripMenuItem
+		'
+		Me.EscargotchatToolStripMenuItem.Name = "EscargotchatToolStripMenuItem"
+		Me.EscargotchatToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+		Me.EscargotchatToolStripMenuItem.Text = "Escargot.chat"
+		'
+		'SetStatusToolStripMenuItem1
+		'
+		Me.SetStatusToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator6, Me.MusicToolStripMenuItem, Me.GameToolStripMenuItem, Me.OfficeToolStripMenuItem})
+		Me.SetStatusToolStripMenuItem1.Name = "SetStatusToolStripMenuItem1"
+		Me.SetStatusToolStripMenuItem1.Size = New System.Drawing.Size(211, 22)
+		Me.SetStatusToolStripMenuItem1.Text = "Activity..."
+		'
+		'ToolStripSeparator6
+		'
+		Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+		Me.ToolStripSeparator6.Size = New System.Drawing.Size(103, 6)
+		'
+		'MusicToolStripMenuItem
+		'
+		Me.MusicToolStripMenuItem.CheckOnClick = True
+		Me.MusicToolStripMenuItem.Name = "MusicToolStripMenuItem"
+		Me.MusicToolStripMenuItem.Size = New System.Drawing.Size(106, 22)
+		Me.MusicToolStripMenuItem.Text = "Music"
+		'
+		'GameToolStripMenuItem
+		'
+		Me.GameToolStripMenuItem.CheckOnClick = True
+		Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
+		Me.GameToolStripMenuItem.Size = New System.Drawing.Size(106, 22)
+		Me.GameToolStripMenuItem.Text = "Game"
+		'
+		'OfficeToolStripMenuItem
+		'
+		Me.OfficeToolStripMenuItem.CheckOnClick = True
+		Me.OfficeToolStripMenuItem.Name = "OfficeToolStripMenuItem"
+		Me.OfficeToolStripMenuItem.Size = New System.Drawing.Size(106, 22)
+		Me.OfficeToolStripMenuItem.Text = "Office"
+		'
+		'MenuToolStripMenuItem
+		'
+		Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TrayToolStripMenuItem, Me.ClassicToolStripMenuItem})
+		Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
+		Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+		Me.MenuToolStripMenuItem.Text = "Layout..."
+		'
+		'TrayToolStripMenuItem
+		'
+		Me.TrayToolStripMenuItem.Name = "TrayToolStripMenuItem"
+		Me.TrayToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
+		Me.TrayToolStripMenuItem.Text = "Ergonomic"
+		'
+		'ClassicToolStripMenuItem
+		'
+		Me.ClassicToolStripMenuItem.Name = "ClassicToolStripMenuItem"
+		Me.ClassicToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
+		Me.ClassicToolStripMenuItem.Text = "Classic"
+		'
+		'Start09trayWithWindowsToolStripMenuItem
+		'
+		Me.Start09trayWithWindowsToolStripMenuItem.Name = "Start09trayWithWindowsToolStripMenuItem"
+		Me.Start09trayWithWindowsToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+		Me.Start09trayWithWindowsToolStripMenuItem.Text = "Start 09tray with Windows"
+		'
+		'ToolStripSeparator5
+		'
+		Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+		Me.ToolStripSeparator5.Size = New System.Drawing.Size(208, 6)
+		'
+		'AboutTidyWLMToolStripMenuItem
+		'
+		Me.AboutTidyWLMToolStripMenuItem.Name = "AboutTidyWLMToolStripMenuItem"
+		Me.AboutTidyWLMToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+		Me.AboutTidyWLMToolStripMenuItem.Text = "About this app"
+		'
 		'frmMain
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -407,5 +414,5 @@ Partial Class frmMain
     Friend WithEvents TrayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClassicToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-
+	Friend WithEvents Start09trayWithWindowsToolStripMenuItem As ToolStripMenuItem
 End Class
