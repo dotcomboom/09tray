@@ -1,27 +1,27 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
-    Inherits System.Windows.Forms.Form
+	Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
-    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        Try
-            If disposing AndAlso components IsNot Nothing Then
-                components.Dispose()
-            End If
-        Finally
-            MyBase.Dispose(disposing)
-        End Try
-    End Sub
+	'Form overrides dispose to clean up the component list.
+	<System.Diagnostics.DebuggerNonUserCode()>
+	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+		Try
+			If disposing AndAlso components IsNot Nothing Then
+				components.Dispose()
+			End If
+		Finally
+			MyBase.Dispose(disposing)
+		End Try
+	End Sub
 
-    'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+	'Required by the Windows Form Designer
+	Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
-    Private Sub InitializeComponent()
+	'NOTE: The following procedure is required by the Windows Form Designer
+	'It can be modified using the Windows Form Designer.  
+	'Do not modify it using the code editor.
+	<System.Diagnostics.DebuggerStepThrough()>
+	Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
 		Me.Button1 = New System.Windows.Forms.Button()
@@ -35,17 +35,6 @@ Partial Class frmMain
 		Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
 		Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
 		Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-		Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.SignOuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.SignInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.OpenMessengerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-		Me.itmOnline = New System.Windows.Forms.ToolStripMenuItem()
-		Me.itmAway = New System.Windows.Forms.ToolStripMenuItem()
-		Me.itmBusy = New System.Windows.Forms.ToolStripMenuItem()
-		Me.imInvisible = New System.Windows.Forms.ToolStripMenuItem()
-		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
 		Me.TidyWLMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.QuitMessengerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
 		Me.GToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,6 +55,18 @@ Partial Class frmMain
 		Me.Start09trayWithWindowsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
 		Me.AboutTidyWLMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+		Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SignOuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SignInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.OpenMessengerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+		Me.itmOnline = New System.Windows.Forms.ToolStripMenuItem()
+		Me.itmAway = New System.Windows.Forms.ToolStripMenuItem()
+		Me.itmBusy = New System.Windows.Forms.ToolStripMenuItem()
+		Me.imInvisible = New System.Windows.Forms.ToolStripMenuItem()
+		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+		Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
 		Me.ContextMenuStrip1.SuspendLayout()
 		Me.SuspendLayout()
 		'
@@ -158,81 +159,13 @@ Partial Class frmMain
 		'
 		Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TidyWLMToolStripMenuItem, Me.ToolStripSeparator1, Me.QuitToolStripMenuItem, Me.SignOuitToolStripMenuItem, Me.SignInToolStripMenuItem, Me.OpenMessengerToolStripMenuItem, Me.ToolStripSeparator4, Me.itmOnline, Me.itmAway, Me.itmBusy, Me.imInvisible})
 		Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-		Me.ContextMenuStrip1.Size = New System.Drawing.Size(181, 236)
-		'
-		'ToolStripSeparator1
-		'
-		Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-		Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
-		'
-		'QuitToolStripMenuItem
-		'
-		Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-		Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.QuitToolStripMenuItem.Text = "Exit"
-		'
-		'SignOuitToolStripMenuItem
-		'
-		Me.SignOuitToolStripMenuItem.Name = "SignOuitToolStripMenuItem"
-		Me.SignOuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.SignOuitToolStripMenuItem.Text = "Sign Out"
-		'
-		'SignInToolStripMenuItem
-		'
-		Me.SignInToolStripMenuItem.Name = "SignInToolStripMenuItem"
-		Me.SignInToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.SignInToolStripMenuItem.Text = "Sign In..."
-		'
-		'OpenMessengerToolStripMenuItem
-		'
-		Me.OpenMessengerToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.OpenMessengerToolStripMenuItem.Name = "OpenMessengerToolStripMenuItem"
-		Me.OpenMessengerToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-		Me.OpenMessengerToolStripMenuItem.Text = "Open Messenger"
-		'
-		'ToolStripSeparator4
-		'
-		Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-		Me.ToolStripSeparator4.Size = New System.Drawing.Size(177, 6)
-		'
-		'itmOnline
-		'
-		Me.itmOnline.Name = "itmOnline"
-		Me.itmOnline.Size = New System.Drawing.Size(180, 22)
-		Me.itmOnline.Tag = "Left"
-		Me.itmOnline.Text = "Online"
-		'
-		'itmAway
-		'
-		Me.itmAway.Name = "itmAway"
-		Me.itmAway.Size = New System.Drawing.Size(180, 22)
-		Me.itmAway.Tag = "Left"
-		Me.itmAway.Text = "Away"
-		'
-		'itmBusy
-		'
-		Me.itmBusy.Name = "itmBusy"
-		Me.itmBusy.Size = New System.Drawing.Size(180, 22)
-		Me.itmBusy.Tag = "Left"
-		Me.itmBusy.Text = "Busy"
-		'
-		'imInvisible
-		'
-		Me.imInvisible.Name = "imInvisible"
-		Me.imInvisible.Size = New System.Drawing.Size(180, 22)
-		Me.imInvisible.Tag = "Left"
-		Me.imInvisible.Text = "Appear Offline"
-		'
-		'Timer1
-		'
-		Me.Timer1.Enabled = True
-		Me.Timer1.Interval = 2000
+		Me.ContextMenuStrip1.Size = New System.Drawing.Size(169, 214)
 		'
 		'TidyWLMToolStripMenuItem
 		'
 		Me.TidyWLMToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuitMessengerToolStripMenuItem1, Me.GToolStripMenuItem, Me.ToolStripSeparator3, Me.MaintenanceToolStripMenuItem, Me.SetStatusToolStripMenuItem1, Me.MenuToolStripMenuItem, Me.Start09trayWithWindowsToolStripMenuItem, Me.ToolStripSeparator5, Me.AboutTidyWLMToolStripMenuItem})
 		Me.TidyWLMToolStripMenuItem.Name = "TidyWLMToolStripMenuItem"
-		Me.TidyWLMToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+		Me.TidyWLMToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
 		Me.TidyWLMToolStripMenuItem.Text = "09tray"
 		'
 		'QuitMessengerToolStripMenuItem1
@@ -352,6 +285,79 @@ Partial Class frmMain
 		Me.AboutTidyWLMToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
 		Me.AboutTidyWLMToolStripMenuItem.Text = "About this app"
 		'
+		'ToolStripSeparator1
+		'
+		Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+		Me.ToolStripSeparator1.Size = New System.Drawing.Size(165, 6)
+		'
+		'QuitToolStripMenuItem
+		'
+		Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+		Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+		Me.QuitToolStripMenuItem.Text = "Exit"
+		'
+		'SignOuitToolStripMenuItem
+		'
+		Me.SignOuitToolStripMenuItem.Name = "SignOuitToolStripMenuItem"
+		Me.SignOuitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+		Me.SignOuitToolStripMenuItem.Text = "Sign Out"
+		'
+		'SignInToolStripMenuItem
+		'
+		Me.SignInToolStripMenuItem.Name = "SignInToolStripMenuItem"
+		Me.SignInToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+		Me.SignInToolStripMenuItem.Text = "Sign In..."
+		'
+		'OpenMessengerToolStripMenuItem
+		'
+		Me.OpenMessengerToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.OpenMessengerToolStripMenuItem.Name = "OpenMessengerToolStripMenuItem"
+		Me.OpenMessengerToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+		Me.OpenMessengerToolStripMenuItem.Text = "Open Messenger"
+		'
+		'ToolStripSeparator4
+		'
+		Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+		Me.ToolStripSeparator4.Size = New System.Drawing.Size(165, 6)
+		'
+		'itmOnline
+		'
+		Me.itmOnline.Name = "itmOnline"
+		Me.itmOnline.Size = New System.Drawing.Size(168, 22)
+		Me.itmOnline.Tag = "Left"
+		Me.itmOnline.Text = "Online"
+		'
+		'itmAway
+		'
+		Me.itmAway.Name = "itmAway"
+		Me.itmAway.Size = New System.Drawing.Size(168, 22)
+		Me.itmAway.Tag = "Left"
+		Me.itmAway.Text = "Away"
+		'
+		'itmBusy
+		'
+		Me.itmBusy.Name = "itmBusy"
+		Me.itmBusy.Size = New System.Drawing.Size(168, 22)
+		Me.itmBusy.Tag = "Left"
+		Me.itmBusy.Text = "Busy"
+		'
+		'imInvisible
+		'
+		Me.imInvisible.Name = "imInvisible"
+		Me.imInvisible.Size = New System.Drawing.Size(168, 22)
+		Me.imInvisible.Tag = "Left"
+		Me.imInvisible.Text = "Appear Offline"
+		'
+		'Timer1
+		'
+		Me.Timer1.Enabled = True
+		Me.Timer1.Interval = 2000
+		'
+		'Timer2
+		'
+		Me.Timer2.Enabled = True
+		Me.Timer2.Interval = 1200
+		'
 		'frmMain
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -374,45 +380,46 @@ Partial Class frmMain
 
 	End Sub
 	Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents PropertyGrid1 As System.Windows.Forms.PropertyGrid
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
-    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
-    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents TidyWLMToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents QuitMessengerToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents MaintenanceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ReceivedFilesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents DdToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents DownloadMessengerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator5 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents AboutTidyWLMToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SignOuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SignInToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OpenMessengerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents itmOnline As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents itmAway As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents itmBusy As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents imInvisible As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SetStatusToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator6 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents MusicToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OfficeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EscargotchatToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TrayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ClassicToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+	Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+	Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+	Friend WithEvents Button2 As System.Windows.Forms.Button
+	Friend WithEvents PropertyGrid1 As System.Windows.Forms.PropertyGrid
+	Friend WithEvents Button3 As System.Windows.Forms.Button
+	Friend WithEvents Button4 As System.Windows.Forms.Button
+	Friend WithEvents Button5 As System.Windows.Forms.Button
+	Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
+	Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
+	Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+	Friend WithEvents TidyWLMToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents QuitMessengerToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents GToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
+	Friend WithEvents MaintenanceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ReceivedFilesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents DdToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents DownloadMessengerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ToolStripSeparator5 As System.Windows.Forms.ToolStripSeparator
+	Friend WithEvents AboutTidyWLMToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
+	Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents SignOuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents SignInToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents OpenMessengerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
+	Friend WithEvents itmOnline As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents itmAway As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents itmBusy As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents imInvisible As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents SetStatusToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ToolStripSeparator6 As System.Windows.Forms.ToolStripSeparator
+	Friend WithEvents MusicToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents GameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents OfficeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents EscargotchatToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents MenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents TrayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents ClassicToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Friend WithEvents Timer1 As System.Windows.Forms.Timer
 	Friend WithEvents Start09trayWithWindowsToolStripMenuItem As ToolStripMenuItem
+	Friend WithEvents Timer2 As Timer
 End Class

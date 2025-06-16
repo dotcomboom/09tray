@@ -92,12 +92,6 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStartup.Designer.vb">
-      <DependentUpon>frmStartup.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmStartup.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="modWinman.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

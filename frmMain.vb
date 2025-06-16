@@ -5,15 +5,18 @@ Public Class frmMain
     Shared api As New Messenger
     Shared process As Process
 
-    Private Sub SetIconFromImage(image As System.Drawing.Bitmap)
-        NotifyIcon1.Icon = Icon.FromHandle(image.GetHicon())
-    End Sub
+    Private disconnectedIcon As Icon
+    Private awayIcon As Icon
+    Private busyIcon As Icon
+    Private invisibleIcon As Icon
+    Private onlineIcon As Icon
+    Private wlmIcon As Icon
 
     Private Function MessengerRunning() As Boolean
         Try
             ' process = System.Diagnostics.Process.GetProcessesByName("msnmsgr")(0)
-            modWinman.HideHiddenWindow()
             api = New Messenger
+            modWinman.HideHiddenWindow()
             Dim window = api.Window
             Return True
         Catch ext As System.Runtime.InteropServices.COMException
@@ -48,7 +51,16 @@ Public Class frmMain
 
         process = System.Diagnostics.Process.GetProcessesByName("msnmsgr")(0)
 
-        SetIconFromImage(My.Resources.disconnected)
+        disconnectedIcon = Icon.FromHandle(My.Resources.disconnected.GetHicon())
+        awayIcon = Icon.FromHandle(My.Resources.away.GetHicon())
+        busyIcon = Icon.FromHandle(My.Resources.busy.GetHicon())
+        invisibleIcon = Icon.FromHandle(My.Resources.offline.GetHicon())
+        onlineIcon = Icon.FromHandle(My.Resources.online.GetHicon())
+        wlmIcon = Icon.FromHandle(My.Resources.wlm.GetHicon())
+        'SetIconFromImage(My.Resources.disconnected)
+
+        NotifyIcon1.Icon = disconnectedIcon
+
         RefreshContextStatus()
 
         'For Each c As IMessengerContact In api.MyContacts
@@ -84,7 +96,8 @@ Public Class frmMain
 
         If Not MessengerRunning() Then
             ' Messenger is not open!
-            SetIconFromImage(My.Resources.wlm)
+            'SetIconFromImage(My.Resources.wlm)
+            NotifyIcon1.Icon = wlmIcon
             SetNotifyStatus("Start Messenger")
             Return False
         End If
@@ -92,27 +105,27 @@ Public Class frmMain
         state = api.MyStatus
 
         If status = "online" And state = MISTATUS.MISTATUS_ONLINE Then
-            SetIconFromImage(My.Resources.online)
+            NotifyIcon1.Icon = onlineIcon
             SetNotifyStatus("Online")
             Return True
         End If
         If status = "away" And away_statuses.Contains(state) Then
-            SetIconFromImage(My.Resources.away)
+            NotifyIcon1.Icon = awayIcon
             SetNotifyStatus("Away")
             Return True
         End If
         If status = "busy" And busy_statuses.Contains(state) Then
-            SetIconFromImage(My.Resources.busy)
+            NotifyIcon1.Icon = busyIcon
             SetNotifyStatus("Busy")
             Return True
         End If
         If status = "invisible" And state = MISTATUS.MISTATUS_INVISIBLE Then
-            SetIconFromImage(My.Resources.offline)
+            NotifyIcon1.Icon = invisibleIcon
             SetNotifyStatus("Invisible")
             Return True
         End If
         If status = "offline" And offline_statuses.Contains(state) Then
-            SetIconFromImage(My.Resources.disconnected)
+            NotifyIcon1.Icon = disconnectedIcon
             SetNotifyStatus("Disconnected")
             Return True
         End If
@@ -168,7 +181,7 @@ Public Class frmMain
             process.Kill()
         Next
 
-        SetIconFromImage(My.Resources.wlm)
+        NotifyIcon1.Icon = wlmIcon
         SetNotifyStatus("Start Messenger")
     End Sub
 
@@ -330,10 +343,6 @@ Public Class frmMain
         Timer1.Enabled = beamingActivity
     End Sub
 
-    Private Sub ContextMenuStrip1_Opened(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
-
-    End Sub
-
     Private Sub MusicToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles MusicToolStripMenuItem.Click
         activityKind = "Music"
         updateActivity()
@@ -352,5 +361,9 @@ Public Class frmMain
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
         Timer1.Enabled = beamingActivity
         updateActivity()
+    End Sub
+
+    Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick
+        RefreshContextStatus()
     End Sub
 End Class
